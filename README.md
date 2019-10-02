@@ -10,4 +10,10 @@ Program girilen miktarlar ile hesaplamalar yapacak ve gider gelir hesaplamaları
 Aynı zamanda çiftlik içinde restorant var ise bu restorant içinde bir adisyon sistemi yapılacak
 Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir giderinede yansıtılacak.
 
-## 
+## Program için gerekli olan
+* Havuz adeti
+* Havuz içindeki balık sayısı
+* Havuzların içindeki balıkların yaşı
+* Havuzlerın içindeki balıkların boyutları
+* balıkların anası babasının adı tc si kızlık soy adı  memleket nere gardaş
+*  
