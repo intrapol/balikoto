@@ -15,5 +15,19 @@ Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir gi
 * Havuz içindeki balık sayısı
 * Havuzların içindeki balıkların yaşı
 * Havuzlerın içindeki balıkların boyutları
-* balıkların anası babasının adı tc si kızlık soy adı  memleket nere gardaş
-*  
+* Havuz için Balıkların toplam ağırlıkları  
+* Havuza atılacak yem miktarı
+## Restorant
+* Restoran  içindeki masa sayısı
+* Restoranta satılan ürünler
+* Satılan ürünlerin fiyatları
+* Satılan ürününün stokta olup olmaması
+* Satılan ürünleri satın alan masalar
+* Eklenecek ürünler
+
+
+# EKRANLAR
+* GİRİŞ SAYFASI
+* RESTORANT SAYFALARI
+* ÇİFTLİK HAVUZ KONTROL SAYFASI
+* STOK KONTROL SAYFASI
