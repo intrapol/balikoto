@@ -17,6 +17,7 @@ Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir gi
 * Havuzlerın içindeki balıkların boyutları
 * Havuz için Balıkların toplam ağırlıkları  
 * Havuza atılacak yem miktarı
+* Balıkların ay sonunda yedikkleri yem ve büyüme hızlarını hesaplayarak verimliliği göstermek .
 ## Restorant
 * Restoran  içindeki masa sayısı
 * Restoranta satılan ürünler
@@ -24,6 +25,10 @@ Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir gi
 * Satılan ürününün stokta olup olmaması
 * Satılan ürünleri satın alan masalar
 * Eklenecek ürünler
+* Adisyon sisteminde hesabı isteyen müşteriye aldığı ürünlerle birlikte toplam viyatı çıktı olarak verebilme
+* Alınan ürünlerin sotoktan düşmesini hesaplamalar
+* Garsonun gelen sparişlerini sisteme yazdırabilmesi için mobil web ara yüzü
+*
 
 
 # EKRANLAR
