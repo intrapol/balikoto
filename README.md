@@ -15,7 +15,7 @@ Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir gi
 * Havuz içindeki balık sayısı
 * Havuzların içindeki balıkların yaşı
 * Havuzlerın içindeki balıkların boyutları
-* Havuz için Balıkların toplam ağırlıkları  
+* Havuz için Balıkların toplam ağırlıkları 
 * Havuza atılacak yem miktarı
 * Balıkların ay sonunda yedikkleri yem ve büyüme hızlarını hesaplayarak verimliliği göstermek .
 ## Restorant
@@ -34,5 +34,5 @@ Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir gi
 # EKRANLAR
 * GİRİŞ SAYFASI
 * RESTORANT SAYFALARI
-* ÇİFTLİK HAVUZ KONTROL SAYFASI
+* ÇİFTLİK HAVUZ KONTROL SAYFASI 
 * STOK KONTROL SAYFASI
