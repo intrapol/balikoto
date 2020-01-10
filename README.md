@@ -36,3 +36,8 @@ Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir gi
 * RESTORANT SAYFALARI
 * ÇİFTLİK HAVUZ KONTROL SAYFASI 
 * STOK KONTROL SAYFASI
+# BALIK YEM BÜYÜKLÜKLERİ 
+* 1 mm
+* 2 mm 
+* 4 mm 
+* 7 mm
