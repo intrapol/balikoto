@@ -10,7 +10,7 @@
             table,td{
                 border:1px solid red;
             }
-        
+
         </style>
     </head>
     <body>
@@ -22,13 +22,13 @@
         <label><button id="olustur">Oluştur</button></label>
         <div id="goster"></div>
     </center>
-        <script>           
+        <script>
            var olustur= document.getElementById("olustur");
             olustur.onclick=function(){
                 var sayac=1;
                 var satir=document.getElementById("satir").value;
                 var sutun=document.getElementById("sutun").value;
-                
+
                  var table=document.createElement("table");
                  for(var i=0;i<satir;i++){
                      var tr=document.createElement("tr");
@@ -37,7 +37,7 @@
                          var td=document.createElement("td");
                          td.innerHTML=sayac++;
                          tr.appendChild(td);
-                     }  
+                     }
                  }
                 document.getElementById("goster").innerHTML="";
                 document.getElementById("goster")
