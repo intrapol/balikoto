@@ -41,3 +41,5 @@ Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir gi
 * 2 mm 
 * 4 mm 
 * 7 mm
+ # Ay sonundaki balık boyutları değil gram girilecek
+
