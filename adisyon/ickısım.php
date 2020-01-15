@@ -19,7 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ADİSYON</title>
 </head>
-<!--  buda mı gol dğeil -->
+<!--  buda mı gol dğeil değilmiş be kardeş -->
 <body>
     <div style="margin-left: 1%;" >
         <button onclick="window.location='./restorant.html'">HAVUZ KENARI </button>
