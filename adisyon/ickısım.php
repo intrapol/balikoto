@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+<?php
+    require("./giriskontrol.php");
+                ?>
     <style>
         body {
       background-color: burlywood;
@@ -9,6 +12,7 @@
         width: 24.5%;
         height: 35px;
     }
+   
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +23,10 @@
     <div style="margin-left: 1%;" >
         <button onclick="window.location='./restorant.html'">HAVUZ KENARI </button>
         <button  onclick="window.location='./yenicardak.html'">YENİ ÇARDAK</button>
-        <button  onclick="window.location='./ickısım.html'">İÇ KISIM </button>
-        <button style="background-color: blue;" onclick="window.location='./digerkisimlar.html'">DİĞER KISIMLAR</button>
+        <button style="background-color: blue;" onclick="window.location='./ickısım.html'">İÇ KISIM </button>
+        <button  onclick="window.location='./digerkisimlar.html'">DİĞER KISIMLAR</button>
     </div>
-     <div><button class="class "></button></div>
-     <div><button class="class "></button></div>
-     <div><button class="class "></button></div>
+    
     <a href="../anasayfa.html" > <p align="right">Geri dön--></p></a>
 </body>
 </html>

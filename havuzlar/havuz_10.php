@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-<head>
+<?php
+                require("./giriskontrol.php");
+                ?>
   <meta charset="UTF-8">
   <style>
     body {

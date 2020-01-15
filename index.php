@@ -7,15 +7,28 @@
   <meta charset="UTF-8">
   <title>Giriş Sayfası</title>
 <body>
+<?php   if($_POST["kullaniciadi"]<> ""){
+if($_POST["kullaniciadi"]=="root"){
+  $_SESSION["girisbasarili"]=1;
+  if($_POST["sifre"]== "123"){
+  echo '<a href="./anasayfa.php">GİRİŞ İÇİN TIKLAYINIZ ....</a>';
+  
+  }else{
+    echo "<h1> ŞİFRE YANLIŞ </h1>";
+  }
+}else{
+  echo "<h1>KULLANICI ADI YANLIŞ VEYA ŞİFRE YANLIŞ</h1>";
+}}
+?>
   <center><img src="./resimler/balikresmi.jpg" alt="balık" align="center">
   </center>
-  <form action="" method="POST">
+  <form  method="POST">
     <table align="center">
-      <tbody>
+
         <tr>
           <td>Kullanici Adi</td>
           <td>:</td>
-          <td><input name="kuladi" type="text" autocomplete="off" style="border-radius:10px;padding:6px" /></td>
+          <td><input name="kullaniciadi" type="text" autocomplete="off" style="border-radius:10px;padding:6px" /></td>
         </tr>
         <tr>
           <td>Sifre</td>
@@ -27,7 +40,7 @@
           <td></td>
           <td><input type="submit" value="Giris" /></td>
         </tr>
-      </tbody>
+      
     </table>
   </form>
 </body>

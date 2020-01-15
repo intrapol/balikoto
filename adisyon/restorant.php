@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
-
+<?php
+    require("./giriskontrol.php");
+                ?>
 <head>
     <style>
         body {
@@ -21,6 +23,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ADİSYON</title>
 </head>
+<?php
+                if($_SESSION["girisbasarili"]<> 1){}
+                else {
+                die("lüffen giris yapınız...... ");}
+                ?>
 
 <body>
     <div style="margin-left: 1%;">

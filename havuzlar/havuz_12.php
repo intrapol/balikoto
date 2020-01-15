@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
-
+<?php
+                require("./giriskontrol.php");
+                ?>
 <head>
   <meta charset="UTF-8">
   <style>
@@ -20,7 +22,7 @@
   <h1>
     <div><a href="../havuzlar.html">GERİ DÖN --></a></div>
     <center>
-      <form action="" method="POST" >
+      <form action=""></form>
       <div> Balık kg Ekle:
         <input type="text" />
         <div> Balık yaşını gir:
@@ -32,21 +34,16 @@
         <div>Havuza atılması gereken yem miktarı:
           <input type="text"></div>
 
-        <div>Balıkların Ay Sonunda ki Gram Ağırlıkları:
+        <div>Balıkların Ay Sonundaki Boyutları:
           <input type="text"></div>
         <div>Balık yemi boyutu:
           <select name="boyut">
             <option value="birmm">1-mm</option>
             <option value="ikimm">2-mm</option>
             <option value="dortmm">4-mm</option>
-            <option value="yedimm">5-mm</option> 
-            <option value="alti">6-mm</option>
+            <option value="yedimm">7-mm</option>
           </select>
         </div>
-        <div>
-         <input type="submit">
-        </div>
-      </form>
   </h1>
 
   <table border="10">
@@ -67,7 +64,4 @@
 
 </body>
 
-<script>
-
-</script>
 </html>

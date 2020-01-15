@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
+<head> 
+    <?php
+                if($_SESSION["girisbasarili"]<> 1)                
+                die("lüffen giris yapınız...... ");
+                ?>
     <style>
     body{
         background-color: burlywood;
@@ -19,10 +23,11 @@
     <title>ANASAYFA</title>
 </head>
 <body>
+               
     
     
-    <button class="buton1"  onclick="window.location='./havuzlar.html';">HAVUZLAR LİSESİNE GİTMEK İÇİN TIKLA ---> </button>
-    <button class="buton2"  onclick="window.location='./adisyon/restorant.html';">RESTORANT SAYFASINA GİTMEK İÇİN TIKLA ---> </button>
+    <button class="buton1"  onclick="window.location='./havuzlar.php';">HAVUZLAR LİSESİNE GİTMEK İÇİN TIKLA ---> </button>
+    <button class="buton2"  onclick="window.location='./adisyon/restorant.php';">RESTORANT SAYFASINA GİTMEK İÇİN TIKLA ---> </button>
     
 </body>
 </html>

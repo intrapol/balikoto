@@ -20,7 +20,10 @@
   <meta charset="UTF-8">
   <title>HAVUZLAR.</title>
 </head>
-
+<?php
+                if($_SESSION["girisbasarili"]<> 1)                
+                die("lüffen giris yapınız...... ");
+                ?>
 <body>
   <div style="background-color: forestgreen;">
     <center>HOŞGELDİNİZ...</center>
