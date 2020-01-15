@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="tr">
+    
 <head> 
-    <?php
-                if($_SESSION["girisbasarili"]<> 1)                
-                die("lüffen giris yapınız...... ");
-                ?>
+    <?php 
+    if($_POST["kullaniciadi"]=="root"){
+        die("lütfen giriş yapınız ");
+        
+    }
+    ?>
+   
     <style>
     body{
         background-color: burlywood;
@@ -24,7 +28,9 @@
 </head>
 <body>
                
-    
+<div style="background-color: forestgreen;">
+    <center>HOŞGELDİNİZ...</center>
+  </div>
     
     <button class="buton1"  onclick="window.location='./havuzlar.php';">HAVUZLAR LİSESİNE GİTMEK İÇİN TIKLA ---> </button>
     <button class="buton2"  onclick="window.location='./adisyon/restorant.php';">RESTORANT SAYFASINA GİTMEK İÇİN TIKLA ---> </button>

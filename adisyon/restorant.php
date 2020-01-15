@@ -31,10 +31,10 @@
 
 <body>
     <div style="margin-left: 1%;">
-        <button style="background-color: blue;" onclick="window.location='./restorant.html'">HAVUZ KENARI </button>
-        <button onclick="window.location='./yenicardak.html'">YENİ ÇARDAK</button>
-        <button onclick="window.location='./ickısım.html'">İÇ KISIM </button>
-        <button onclick="window.location='./digerkisimlar.html'">DİĞER KISIMLAR</button>
+        <button style="background-color: blue;" onclick="window.location='./restorant.php'">HAVUZ KENARI </button>
+        <button onclick="window.location='./yenicardak.php'">YENİ ÇARDAK</button>
+        <button onclick="window.location='./ickısım.php'">İÇ KISIM </button>
+        <button onclick="window.location='./digerkisimlar.php'">DİĞER KISIMLAR</button>
     </div>
     <div align="center">
        <button class="masa">
@@ -64,7 +64,7 @@
             <h3>M-8</h3>
         </button>
     </div>
-    <a href="../anasayfa.html">
+    <a href="../anasayfa.php">
         <p align="right">Geri dön--></p>
     </a>
 </body>

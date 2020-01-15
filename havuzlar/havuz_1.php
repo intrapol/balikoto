@@ -2,6 +2,7 @@
 <html lang="tr">
 <?php
                 require("./giriskontrol.php");
+                require("../db.php");
                 ?>
 <head>
   <meta charset="UTF-8">
@@ -14,28 +15,38 @@
       
     }
   </style>
+<?php 
+$kg=$_POST["kg"];
+$yas=$_POST["yas"];
+$boyut=$_POST["boyut"];
+$yemmiktari=$_POST["yermmiktari"];
+$aysonu_agrilik=$_POST["aysonu_agrilik"];
+$boyut=$_POST["boyut"];
+if($sorgu->query("INSERT INTO `havuz1` (`kg`, `yas`, `boyut`, `yem_miktari`, `aysonu_agirlik`, `yemboyutu`)
+VALUES ('$_POST['$kg', '$yas', '$boyut', '$yemmiktari', '$aysonu_agrilik', '$boyut');"))
 
+?>
   <title>HAVUZ-1</title>
 </head>
 
 <body>
   <h1>
-    <div><a href="../havuzlar.html">GERİ DÖN --></a></div>
+    <div><a href="../havuzlar.php">GERİ DÖN --></a></div>
     <center>
       <form action="" method="POST" >
       <div> Balık kg Ekle:
-        <input type="text" />
+        <input type="text" name="kg" />
         <div> Balık yaşını gir:
-          <input type="text">
+          <input type="text" name="yas">
         </div>
         <div>Balık Boyutu:
-          <input type="text">
+          <input type="text" name="boyut">
         </div>
         <div>Havuza atılması gereken yem miktarı:
-          <input type="text"></div>
+          <input type="text" name="yemmiktari"></div>
 
         <div>Balıkların Ay Sonunda ki Gram Ağırlıkları:
-          <input type="text"></div>
+          <input type="text" name="aysonu_agrilik"></div>
         <div>Balık yemi boyutu:
           <select name="boyut">
             <option value="birmm">1-mm</option>

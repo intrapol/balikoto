@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
   <style>
   </style>
   <meta charset="UTF-8">
   <title>Giriş Sayfası</title>
 <body>
-<?php   if($_POST["kullaniciadi"]<> ""){
+<?php  if($_POST["kullaniciadi"]==""){}
+else {
 if($_POST["kullaniciadi"]=="root"){
-  $_SESSION["girisbasarili"]=1;
+  
   if($_POST["sifre"]== "123"){
+    $_SESSION["girisbasarili"]=1;
+    $_POST["deneme"]=1;
   echo '<a href="./anasayfa.php">GİRİŞ İÇİN TIKLAYINIZ ....</a>';
   
   }else{
