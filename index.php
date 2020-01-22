@@ -6,7 +6,10 @@
   <meta charset="UTF-8">
   <title>Giriş Sayfası</title>
 <body>
-<?php  if($_POST["kullaniciadi"]==""){}
+<?php  
+$_SESSION["girisbasarili"]=0;
+
+if($_POST["kullaniciadi"]==""){}
 else {
 if($_POST["kullaniciadi"]=="root"){
   
@@ -14,6 +17,7 @@ if($_POST["kullaniciadi"]=="root"){
     $_SESSION["girisbasarili"]=1;
     $_POST["deneme"]=1;
   echo '<a href="./anasayfa.php">GİRİŞ İÇİN TIKLAYINIZ ....</a>';
+  
   
   }else{
     echo "<h1> ŞİFRE YANLIŞ </h1>";

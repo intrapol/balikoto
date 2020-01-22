@@ -3,10 +3,15 @@
     
 <head> 
     <?php 
-    if($_POST["kullaniciadi"]=="root"){
-        die("lütfen giriş yapınız ");
+    if(isset($_POST["kullaniciadi"])){}
+        else{
+            header("girisyap.php");
         
-    }
+        }
+    
+    
+    
+
     ?>
    
     <style>

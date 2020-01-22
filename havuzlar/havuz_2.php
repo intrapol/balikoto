@@ -16,13 +16,19 @@
     }
   </style>
   <?php
-$SQL   = "SELECT kg, yas, boyut, yem_miktari, aysonu_agirlik, yemboyutu FROM kavuz1 WHERE ";
+  $SQL = "SELECT id FROM havuz1 WHERE id desc";
+  $rows= mysqli_query($db , $SQL);
+  $row = mysqli_fetch_assoc($rows);
+  $SQL ="SELECT * FROM havuz1 WHERE id =$row";
+  
+
+$SQL   = "SELECT kg, yas, boyut, yem_miktari, aysonu_agirlik, yemboyutu FROM havuz2 WHERE id= $SQL ";
   $rows  = mysqli_query($db, $SQL);
 
   while($row = mysqli_fetch_assoc($rows)) { // Kayıt adedince döner
        
        $kg= $row["kg"];
-       $yas= $row["kelime2"] ;
+       $yas= $row["yas"] ;
        $boyut=$row["boyut"];
        $yemmiktari=$row["yem_miktari"];
        $aysonu_agirlik=$row["aysonu_agirlik"];
@@ -64,7 +70,7 @@ $SQL   = "SELECT kg, yas, boyut, yem_miktari, aysonu_agirlik, yemboyutu FROM kav
             <option value="ikimm">2-mm</option>
             <option value="dortmm">4-mm</option>
             <option value="yedimm">5-mm</option> 
-            <option value="alti">6-mm</option>
+            <option value="altimm">6-mm</option>
           </select>
         </div>
         <div>
@@ -82,7 +88,7 @@ $SQL   = "SELECT kg, yas, boyut, yem_miktari, aysonu_agirlik, yemboyutu FROM kav
   $aysonu_agrilik=$_POST["aysonu_agrilik"];
   $yemboyutu=$_POST["yemboyutu"];
   
-  $SQL = sprintf("INSERT INTO havuz1  SET
+  $SQL = sprintf("INSERT INTO havuz2  SET
   kg = '%s',
   yas = '%s',
   boyut = '%s',

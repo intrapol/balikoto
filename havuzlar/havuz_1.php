@@ -70,7 +70,7 @@ $SQL   = "SELECT kg, yas, boyut, yem_miktari, aysonu_agirlik, yemboyutu FROM kav
             <option value="ikimm">2-mm</option>
             <option value="dortmm">4-mm</option>
             <option value="yedimm">5-mm</option> 
-            <option value="alti">6-mm</option>
+            <option value="altimm">6-mm</option>
           </select>
         </div>
         <div>
