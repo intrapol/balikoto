@@ -1,3 +1,6 @@
+<?php
+include("fonksiyon/fonksiyon.php"); $sistem = new sistem;
+ ?>
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -21,23 +24,21 @@
 <body>
 <div class="container-fluid " id="rows">
 <div class="row table-dark">
-<div class="col-md-3  border-right " id="rows">doluluk oranı</div> 
-<div class="col-md-3  border-right"id="rows">ss</div> 
-<div class="col-md-3  border-right"id="rows">ss</div> 
-<div class="col-md-3  border-right"id="rows">ss</div> 
+<div class="col-md-3  border-right " id="rows">Toplam Sipariş :  <a class="text-warning">10</a></div> 
+<div class="col-md-3  border-right"id="rows">Doluluk Oranı : <a class="text-warning">10</a></div> 
+<div class="col-md-3  border-right"id="rows">Toplam Masa : <a class="text-warning">10</a></div> 
+<div class="col-md-3  border-right"id="rows">Tarih :  <a class="text-warning">10</a></div> 
 
 </div>
 <div class="row " >
-<div class="col-md-2 border mx-auto  p-2 text-cneter bg-danger" id="masa">ss</div>
-<div class="col-md-2 border mx-auto p-2 text-center"id="masa">ss</div>
-<div class="col-md-2 border mx-auto p-2 text-center" id="masa">ss</div>
-<div class="col-md-2 border mx-auto p-2 text-center" id="masa">ss</div>
-<div class="col-md-2 border mx-auto p-2 text-center"  id="masa">ss</div>
-<div class="col-md-2 border mx-auto p-2 text-center" id="masa">ss</div>
+
+
+<?php $sistem->masacek($dv); ?>
 
 
 </div>
-
 </div>
+
+
 </body>
 </html>
