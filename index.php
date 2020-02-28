@@ -1,5 +1,7 @@
 <?php
-include("fonksiyon/fonksiyon.php"); $sistem = new sistem;
+include("fonksiyon/fonksiyon.php");
+
+ 
  ?>
 <!DOCTYPE html>
 <html lang="tr">
@@ -26,15 +28,15 @@ include("fonksiyon/fonksiyon.php"); $sistem = new sistem;
 <div class="row table-dark">
 <div class="col-md-3  border-right " id="rows">Toplam Sipariş :  <a class="text-warning">10</a></div> 
 <div class="col-md-3  border-right"id="rows">Doluluk Oranı : <a class="text-warning">10</a></div> 
-<div class="col-md-3  border-right"id="rows">Toplam Masa : <a class="text-warning">10</a></div> 
-<div class="col-md-3  border-right"id="rows">Tarih :  <a class="text-warning">10</a></div> 
+<div class="col-md-3  border-right"id="rows">Toplam Masa : <a class="text-warning"><?php include 'fonksiyon/masatoplam.php';  ?></a></div> 
+<div class="col-md-3  border-right"id="rows">Tarih :  <a class="text-warning"><?php echo date('d.m.Y H:i:s'); ?></a></div> 
 
 </div>
 <div class="row " >
 
-
-<?php $sistem->masacek($dv); ?>
-
+<?php
+include 'fonksiyon/masacek.php';
+?>
 
 </div>
 </div>
