@@ -10,41 +10,17 @@ Program girilen miktarlar ile hesaplamalar yapacak ve gider gelir hesaplamaları
 Aynı zamanda çiftlik içinde restorant var ise bu restorant içinde bir adisyon sistemi yapılacak
 Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir giderinede yansıtılacak.
 
-## Program için gerekli olan
-* Havuz adeti
-* Havuz içindeki balık sayısı
-* Havuzların içindeki balıkların yaşı
-* Havuzlerın içindeki balıkların boyutları
-* Havuz için Balıkların toplam ağırlıkları 
-* Havuza atılacak yem miktarı
-* Balıkların ay sonunda yedikkleri yem ve büyüme hızlarını hesaplayarak verimliliği göstermek .
-## Restorant
-* Restoran  içindeki masa sayısı
-* Restoranta satılan ürünler
-* Satılan ürünlerin fiyatları
-* Satılan ürününün stokta olup olmaması
-* Satılan ürünleri satın alan masalar
-* Eklenecek ürünler
-* Adisyon sisteminde hesabı isteyen müşteriye aldığı ürünlerle birlikte toplam viyatı çıktı olarak verebilme
-* Alınan ürünlerin sotoktan düşmesini hesaplamalar
-* Garsonun gelen sparişlerini sisteme yazdırabilmesi için mobil web ara yüzü
-*
-
-
-# EKRANLAR
-* GİRİŞ SAYFASI
-* RESTORANT SAYFALARI
-* ÇİFTLİK HAVUZ KONTROL SAYFASI 
-* STOK KONTROL SAYFASI
-# BALIK YEM BÜYÜKLÜKLERİ 
-* 1 mm
-* 2 mm 
-* 4 mm 
-* 7 mm
- # Poje yapım aşaması...
- * index.php klosörü oluştur  ana sayfayı oluştur 
- * funcionları oluştur 
- * restoran sayfası oluştur
- * havuzlar anasayfası oluştur 
- * veri tabanını oluştur 
+## RESTORANT BÖLÜMÜ İÇİN GEREKLİ OLAN MATARYERLER 
+# Restorant içinde bulunan masaların kontrol sayfası 
+* Masa ekle Masa sil sayfasını oluşturulması.
+* Tüm masaların olucağı Masa ekle/sil sayfası 
+* Masa SAYFASINDA:::
+***spariş verme*** ***spariş ekleme*** ***hesap alma*** *** masayı kapatma butonları ***
+* Masa sayfasının üst kısmında navbar bilgileri 
+* Masa sayfaının sol kısmında masa içindeki ürünlerin listesi ve ürünlerin  yanında ürün sil butonları.
+* Masa sayfasını sağ kısımında masaya eklenebilecek ürünlerin listesi içecekler yiyecekler tatlılar.... gibi 
+* Masa sayfasının sol alt kısmında hesap al butonu yer alacak 
+* Masa sayfasının sağ alt kısmında masayı kapat butonu yer alacak bu sayede hangi masaların dolu olduğunu masalar.php sayfasından görebileceğiz masaların online yada ofline olma durumalırnın bu buton sayesinde görebileceğiz.
+* DENEME:::masa sayfasını sağ köşesinde diğer masalara erişebilmek için masalar.php sayfasına yönlendirecek button olmalı.
+* Masa sayfasını içinde sorgualrı göndermek için buttonların olması gerekiyor... tersi durumda sorguları gönderemeyiz.
 

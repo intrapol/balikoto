@@ -2,6 +2,21 @@
 $db = new mysqli("localhost","serdar","123456","balikoto")or die("bağlanamadı:::");
 $db->set_charset("utf8");
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*class sistem{
 
 
