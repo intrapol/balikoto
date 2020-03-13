@@ -1,0 +1,7 @@
+CREATE TABLE `masalar` (
+  `id` int NOT NULL,
+  `ad` varchar(200) COLLATE 'utf8_turkish_ci' NOT NULL
+) COLLATE 'utf8_turkish_ci';
+
+
+

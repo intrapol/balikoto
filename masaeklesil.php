@@ -12,21 +12,54 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="dosya/jqu.js"></script>
-    <link rel="stylesheet" href="dosya/boost.css">
+    <?php 
+    include 'fonksiyon/kaynak.php';
+    ?>
     <title>MASA EKLE/SİL SAYFASI </title>
 </head>
 <body>
-<div class="container-fluid " id="rows">
-<div class="row table-dark">
-<div class="col-md-3  border-right " id="rows">Toplam Sipariş :  <a class="text-warning">10</a></div> 
-<div class="col-md-3  border-right"id="rows">Doluluk Oranı : <a class="text-warning">10</a></div> 
-<div class="col-md-3  border-right"id="rows">Toplam Masa : <a class="text-warning"><?php include 'fonksiyon/masatoplam.php';  ?></a></div> 
-<div class="col-md-3  border-right"id="rows">Tarih :  <a class="text-warning"><?php echo date('d.m.Y H:i:s'); ?></a></div> 
+<?php 
+include 'fonksiyon/ust.php'
+?>
+<?php 
+require 'fonksiyon/fonksiyon.php';
+$sql="SELECT * FROM masalar";
+$sorgu=mysqli_query($db,$sql);
+    while ( $sonuc=mysqli_fetch_assoc($sorgu))   :
+        // veri tabanından masaları çekme
+        echo '<center>
+        <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true">'.$sonuc["ad"].'</a>
 
-</div>
-    <div class="col-md-5 border border-dark bg-danger mx-auto p-2 text-center text-white" id="masa"></div>
-    <div class="col-md-5 border border-dark bg-danger mx-auto p-2 text-center text-white" id="masa"></div>
+        <a href="masaeklesil.php?id='.$sonuc["id"].'" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">SİL</a>
+        </center>
+        <br>';
+
+    endwhile;
+    if(isset($_GET["id"])){
+        $sql = 'DELETE FROM `masalar`
+        WHERE `id` = '.$_GET["id"].';';
+        mysqli_query($db,$sql);
+        header("Location:masaeklesil.php");
     
+    }
+    if(isset($_GET["masa"])){
+    $masa=$_GET["masa"];
+        $sqll = "INSERT INTO `masalar` (`ad`)
+        VALUES ('$masa');";
+        mysqli_query($db, $sqll);
+        header("Location:masaeklesil.php");
+    
+    }
+?>
+<div class="col-md-3 mx-auto">
+    <form  method="get">
+      <input type="text" id="" class="form-control" name="masa" placeholder="Masa Adı" autocomplete="off">
+     <div class="checkbox mb-3">
+  </div>
+  <button class="btn btn-lg btn-success btn-block" type="submit">EKLE</button>
+  </form>
+  </div>
+
+
 </body>
 </html>

@@ -28,15 +28,11 @@ a {
 }
 </style>
 <body>
-<div class="border-right">
-<div class="container-fluid " id="rows">
-<div class="row table-dark">
-<div class="col-md-3  border-right " id="rows">Toplam Sipariş :  <a class="text-warning">10</a></div> 
-<div class="col-md-3  border-right"id="rows">Doluluk Oranı : <a class="text-warning">10</a></div> 
-<div class="col-md-3  border-right"id="rows">Toplam Masa : <a class="text-warning"><?php include 'fonksiyon/masatoplam.php';  ?></a></div> 
-<div class="col-md-3  border-right"id="rows">Tarih :  <a class="text-warning"><?php echo date('d.m.Y H:i:s'); ?></a></div> 
 
-</div>
+<?php 
+
+include 'fonksiyon/ust.php';
+?>
 <div class="row " >
 
 <?php
