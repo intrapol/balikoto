@@ -1,3 +1,5 @@
+CREATE USER 'serdar'@'localhost' IDENTIFIED VIA mysql_native_password USING '***';GRANT ALL PRIVILEGES ON *.* TO 'serdar'@'localhost' REQUIRE NONE WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0; 
+
 CREATE TABLE `masalar` (
   `id` int NOT NULL,
   `ad` varchar(200) COLLATE 'utf8_turkish_ci' NOT NULL
