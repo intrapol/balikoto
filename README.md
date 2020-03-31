@@ -24,3 +24,19 @@ Bu adisyon sistemi ile satılan malların gider gelirlerinide çiftlik  gelir gi
 * DENEME:::masa sayfasını sağ köşesinde diğer masalara erişebilmek için masalar.php sayfasına yönlendirecek button olmalı.
 * Masa sayfasını içinde sorgualrı göndermek için buttonların olması gerekiyor... tersi durumda sorguları gönderemeyiz.
 
+
+
+### ÜRÜN BİLGİLERİ
+* masa id // bu masa veri tabanında oluşturulan masanın hangisi olduğunu bilebilmek için var
+* ürün id int 
+* ürün adı string 
+* ürün fiyat float 
+
+ kod    CREATE TABLE `ms1` (
+  `masaid` int NOT NULL,
+  `urunid` int NOT NULL,
+  `urunad` varchar(200) COLLATE 'utf8_turkish_ci' NOT NULL,
+  `urunfiyat` float NOT NULL
+);
+
+ kooddddd

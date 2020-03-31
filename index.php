@@ -11,13 +11,12 @@
 <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
  <?php  
-if(isset($_POST["kullaniciadi"])){
-    if($_POST["kullaniciadi"]=="serdar"){
-        if($_POST["sifre"]=="123"){
+if(isset($_POST["sifre"])){
+            if($_POST["sifre"]=="123"){
           // masalar kısmına yönlendirme
             header("Location:masalar.php");
         }
-    }
+    
 }
     
  ?>   
@@ -48,12 +47,13 @@ if(isset($_POST["kullaniciadi"])){
     <form  method="post">
   <img class="mb-4" src="dosya/balıkfoto" alt="" width="100" height="100">
   <h1 class="h3 mb-3 font-weight-normal">GİRİŞ YAP</h1>
-    <input type="text" id="" class="form-control" name="kullaniciadi" placeholder="KULLANICI ADI" required autofocus>
-    <input type="password" id="sifre" name="sifre" class="form-control" placeholder="ŞİFRE" required>
+    <input type="password" id="sifre" name="sifre" value="" class="form-control" placeholder="ŞİFRE" required>
   <div class="checkbox mb-3">
   </div>
   <button class="btn btn-lg btn-primary btn-block" type="submit">GİRİŞ YAP</button>
   </form>
+  
+  
   </div>
   
 

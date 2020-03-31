@@ -35,21 +35,8 @@ $sorgu=mysqli_query($db,$sql);
         <br>';
 
     endwhile;
-    if(isset($_GET["id"])){
-        $sql = 'DELETE FROM `masalar`
-        WHERE `id` = '.$_GET["id"].';';
-        mysqli_query($db,$sql);
-        header("Location:masaeklesil.php");
-    
-    }
-    if(isset($_GET["masa"])){
-    $masa=$_GET["masa"];
-        $sqll = "INSERT INTO `masalar` (`ad`)
-        VALUES ('$masa');";
-        mysqli_query($db, $sqll);
-        header("Location:masaeklesil.php");
-    
-    }
+    include 'fonksiyon/masasil.php';
+  include 'fonksiyon/masaekle.php';
 ?>
 <div class="col-md-3 mx-auto">
     <form  method="get">

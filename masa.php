@@ -11,21 +11,21 @@
 <?php 
 include 'fonksiyon/ust.php'
 ?>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 border-dark">
-        <?php 
-              include 'fonksiyon/masacek.php';
-              ?> 
-        </div>
-            <div class="col-md-6 ">
-              <div class="col-md-6">
-              
-              </div>
-            
-            </div>
-    </div>
+
+<style >
+.sol {width:50%; background:#666; float:left;}
+.sag {width:50%; background:#03C; float:right;}
+</style>
+
+<div class="sol">
+
+d
 </div>
+<div class="sag">
+<h1>SAĞ</h1>
+</div>
+
+
    
 </body>
 </html>

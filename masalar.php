@@ -14,7 +14,7 @@ include("fonksiyon/fonksiyon.php");
 </head>
 <style>
 #rows  {
-    height:25px;
+    height:45px;
 }
 #masa { 
     height:80px;
